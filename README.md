@@ -7,7 +7,7 @@ Due to time limitation, this project will focus on 2 main sources of data: Wikip
 
 ## Data preparation
 
-### Optaining Wikipidia data
+### Optain Wikipidia data
 
 In the website [Wikidata query service](https://query.wikidata.org/), I run the following query:
 
@@ -31,5 +31,7 @@ WHERE {
 
 This step gives me the `data/wikidata.csv` file
 
+### Obtain Europeana data
 
+Fetching the Europeana data and convert data into a csv file `europeana_data.csv` using script `europeana.py`.
 
