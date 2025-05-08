@@ -33,12 +33,22 @@ This step gives me the `data/wikidata.csv` file
 
 ### Obtain Europeana data
 
-Fetching the Europeana data and convert data into a csv file `europeana_data.csv` using script `europeana.py`.
+Fetch the [Europeana data](https://apis.europeana.eu/en) and convert data into a csv file `europeana_data.csv` using script `europeana.py`.
+
+### Merge table
+
+Merge two files `data/wikidata.csv` and `europeana.py` to prepare for plotting them in GIS. The goal of this step is:
+- Clean up data in both `data/wikidata.csv` and `europeana.py`, make sure they all have `longitude` and `latitude` fields
+- Merge 2 table to `painting_data.csv` file
+
+Implemented in [mergeData.ipynb](./mergeData.ipynb)
+
 
 ## Reference
 1. [Wikidata documents](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
 2. [Europeana APIs](https://apis.europeana.eu/en)
 3. https://www.geeksforgeeks.org/asynchronous-http-requests-with-python/
 4. [Geoapify API](https://www.geoapify.com/get-started-with-maps-api/)
+5. [Pandas documentation](https://pandas.pydata.org/docs/reference/index.html)
 
 
