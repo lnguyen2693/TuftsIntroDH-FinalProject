@@ -35,3 +35,10 @@ This step gives me the `data/wikidata.csv` file
 
 Fetching the Europeana data and convert data into a csv file `europeana_data.csv` using script `europeana.py`.
 
+## Reference
+1. [Wikidata documents](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
+2. [Europeana APIs](https://apis.europeana.eu/en)
+3. https://www.geeksforgeeks.org/asynchronous-http-requests-with-python/
+4. [Geoapify API](https://www.geoapify.com/get-started-with-maps-api/)
+
+
