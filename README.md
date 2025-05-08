@@ -47,7 +47,6 @@ Implemented in [mergeData.ipynb](./mergeData.ipynb)
 ## Reference
 1. [Wikidata documents](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
 2. [Europeana APIs](https://apis.europeana.eu/en)
-3. https://www.geeksforgeeks.org/asynchronous-http-requests-with-python/
 4. [Geoapify API](https://www.geoapify.com/get-started-with-maps-api/)
 5. [Pandas documentation](https://pandas.pydata.org/docs/reference/index.html)
 
