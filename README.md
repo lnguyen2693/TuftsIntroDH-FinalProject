@@ -1,9 +1,9 @@
 # Overview
 This is a time-aware ArcGIS map using Wikidata database to show the current location of Renaissance paintings (1300–1600), aiming to find out where would be the place having the most Renaissance paintings.
 
-Since the Renaissance paintings were produced mostly in Europe, my initial assumption is Europe countries will have more Renaissance paintings than that of other countries. 
+Since the Renaissance paintings were produced mostly in Europe, my assumption is Europe countries will have more Renaissance paintings than that of other countries. 
 
-Due to time limitation, this project will focus on 2 main sources of data: Wikipedia and Europeana. 
+Due to resource limitation, this project will focus on 2 main sources of data: Wikipedia and Europeana. 
 
 ## Data preparation
 
@@ -43,11 +43,20 @@ Merge two files `data/wikidata.csv` and `europeana.py` to prepare for plotting t
 
 Implemented in [mergeData.ipynb](./mergeData.ipynb)
 
+## ArcGIS Map
+
+[ArcGIS map: Renaissance painting Distribution](https://tuftsgis.maps.arcgis.com/apps/mapviewer/index.html?webmap=c06703d01fc34af4b13159dc26c82c7e)
+
+The map show that my assumption is correct. However, this map only showcase a very small dataset, so it can be incorrect. To my surprise is some Renaissance painting are also kept in the Asian area. This is fairly uncommon, as Asian area were colonized by the Western in the past, and it is very uncommon for the colonized to own items of its colonizer's culture, especially art, a luxury item that mainly serves the upperclass in society.
+
+I initially wanted to make the map time-awared, which means I can slide a time slider and get more understanding about the distribution of Renaissance painting of different period. However, it seems like my data makes it impossible to do so since the feature requires a `date` data in providing all `YYYY-MM-DD`. It's impossible to obtain this kind of data about the Renaissance paintings since those paintings were produced too long ago.
+
 
 ## Reference
 1. [Wikidata documents](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
 2. [Europeana APIs](https://apis.europeana.eu/en)
 4. [Geoapify API](https://www.geoapify.com/get-started-with-maps-api/)
 5. [Pandas documentation](https://pandas.pydata.org/docs/reference/index.html)
+5. https://www.youtube.com/watch?v=qOxYj5B2vng
 
 
