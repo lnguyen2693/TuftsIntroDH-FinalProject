@@ -7,7 +7,7 @@ Due to resource limitation, this project will focus on 2 main sources of data: W
 
 ## Data preparation
 
-### Optain Wikipidia data
+### Wikipidia data
 
 In the website [Wikidata query service](https://query.wikidata.org/), I run the following query:
 
@@ -31,11 +31,11 @@ WHERE {
 
 This step gives me the `data/wikidata.csv` file
 
-### Obtain Europeana data
+### Europeana data
 
 Fetch the [Europeana data](https://apis.europeana.eu/en) and convert data into a csv file `europeana_data.csv` using script `europeana.py`.
 
-### Merge table
+### Merge data
 
 Merge two files `data/wikidata.csv` and `europeana.py` to prepare for plotting them in GIS. The goal of this step is:
 - Clean up data in both `data/wikidata.csv` and `europeana.py`, make sure they all have `longitude` and `latitude` fields
